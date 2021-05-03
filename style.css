@@ -1,18 +1,88 @@
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
+}
+
+header {
+  height: 10vh;
 }
 
 /* MENU BURGER */
 
+.burger {
+  width: 42px;
+  height: 24px;
+  z-index: 99999;
+  cursor: pointer;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+}
+
+.burger span {
+  background-color: black;
+  width: 100%;
+  height: 4px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.5s ease-in-out;
+}
+.burger span::before,
+.burger span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: black;
+  transition: transform 0.5s ease-in-out;
+}
+
+.burger span::before {
+  transform: translateY(-10px);
+}
+
+.burger span::after {
+  transform: translateY(10px);
+}
+
+.burger.isOpen span {
+  background-color: transparent;
+}
+.burger.isOpen span::before {
+  transform: translateY(0px) rotateZ(45deg);
+}
+.burger.isOpen span::after {
+  transform: translateY(0px) rotateZ(-45deg);
+}
+
 /* SECTION 1 */
+
+.sec1 {
+  border: 2px solid red;
+  width: auto;
+  height: auto;
+}
+
+.sec1 img {
+  width: 100%;
+  position: relative;
+}
+
+.sec1 h1,
+h2 {
+  position: absolute;
+  top: 0;
+  z-index: 11;
+}
 
 /* SECTION 2 */
 
