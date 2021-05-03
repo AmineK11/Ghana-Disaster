@@ -15,23 +15,27 @@
 
     <!-- MENU BURGER -->
 
-    <header>
-        <div class="burger">
-            <span></span>
-        </div>
-        <nav>
-            <a href="#">Genèse</a>
-            <a href="#">Impact sur le Ghana</a>
-            <a href="#">Un espoir retrouvé</a>
-            <a href="#">Liens utiles</a>
+    <div class="flex">
+        <nav class="flex">
+            <div class="burger">
+                <span class="bar"></span>
+            </div>
         </nav>
-    </header>
+    </div>
+    <div class="menu_burger navbar flex">
+        <div class="list flex">
+          <a href="#" class="list-link">La Genèse</a>
+          <a href="#" class="list-link">Impact sur le Ghana</a>
+          <a href="#" class="list-link">Espoir pour le Ghana</a>
+          <a href="#" class="list-link">Liens utiles</a>
+        </div>
+    </div>
 
     <!-- SECTION GHANA DISASTER -->
 
-    <section class="sec1">
-        <h1>GHANA DISASTER</h1>
-        <h2>Le pays devenu décharge mondiale du numérique.</h2>
+    <section class="sec1 flex">
+        <h1>GHANA <br> DISASTER</h1>
+        <h2>Le pays devenu décharge mondiale <br> du numérique.</h2>
         <img src="/images/Ghana-bg.jpg" alt="Image d'un enfant portant un télévision">
     </section>
 
@@ -39,8 +43,8 @@
 
     <section class="sec2">
         <img src="/images/Enfant-bg.png" alt="Enfant gannéhen dans une décharge">
-        <p>“Je démonte les ordintaeurs et les postes de télévisions pour y trouver les métaux que je vais revendre pour acheter de la nourriture.”</p>
-        <p>Pafoche, 13 ans Enfant Ganhéen</p>
+        <p class="citation">“Je démonte les ordintaeurs et les postes de télévisions pour y trouver les métaux que je vais revendre pour acheter de la nourriture.”</p>
+        <p class="citation-desc">Pafoche, 13 ans Enfant Ganhéen</p>
     </section>
 
     <!-- LA GENESE -->
@@ -115,5 +119,7 @@
         <a href="https://mrmondialisation.org/des-images-a-peine-croyables-la-decharge-dagbogbloshie/">Sources des images utilisées</a>
         <p>© 2021 - Amine Kahlaoui</p>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
