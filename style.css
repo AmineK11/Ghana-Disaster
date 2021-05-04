@@ -34,6 +34,10 @@ h3 {
   justify-content: center;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* MENU BURGER */
 
 .burger {
@@ -132,12 +136,31 @@ h3 {
   transform: scaleX(1);
 }
 
+/* SCROLL HORIZONTAL */
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  width: 200vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.container {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-x: hidden;
+}
+
 /* SECTION 1 */
 
 .sec1 {
   position: relative;
   text-align: center;
   background: black;
+  width: 100vw;
 }
 
 .sec1 img {
@@ -175,10 +198,9 @@ h3 {
   position: relative;
   background: black;
   justify-content: flex-start;
+  width: 100vw;
   height: 100vh;
 }
-
-
 
 .sec2 .citation-block {
   position: absolute;
