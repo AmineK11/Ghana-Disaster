@@ -42,6 +42,10 @@ h3 {
   display: none;
 }
 
+.video-responsive {
+  display: none;
+}
+
 /* MENU BURGER */
 
 .burger {
@@ -146,8 +150,6 @@ h3 {
 .sec1 {
   position: relative;
   text-align: center;
-  background: black;
-  width: 100vw;
 }
 
 .sec1 img {
@@ -183,8 +185,8 @@ h3 {
 
 .sec2 {
   position: relative;
-  background: black;
   justify-content: flex-start;
+  padding-top: 150px;
 }
 
 .sec2 .citation-block {
@@ -193,7 +195,7 @@ h3 {
   right: 0;
   height: 350px;
   width: 700px;
-  background: #101010;
+  background: #272622;
 }
 
 .sec2 .citation-block .guille {
@@ -229,7 +231,8 @@ h3 {
 
 .sec3 {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
+  margin-top: 150px;
 }
 
 .sec3 img {
@@ -264,7 +267,7 @@ h3 {
   display: none;
 }
 
-.sec3 .iframe iframe{
+.sec3 iframe{
   position: absolute;
   bottom: 0;
   margin-bottom: 50px;
@@ -281,7 +284,7 @@ h3 {
 .sec4 .carre-box {
   position: relative;
   width: 100%;
-  margin-bottom: 350px;
+  margin-bottom: 200px;
 }
 
 .sec4 .carre {
@@ -309,6 +312,10 @@ h3 {
   position: absolute;
   top: 50px;
   transform: rotate(45deg);
+}
+
+.sec4 .num2 {
+  display: none;
 }
 
 .sec4 .carre p {
@@ -423,11 +430,89 @@ h3 {
 }
 
 @media (max-width: 860px) {
-  .sec3 .frame {
+  .sec3 iframe {
     display: none;
   }
-  .sec3 .responsive-frame {
-    display: block;
+  .video-responsive {
+    display: flex;
+  }
+  .video-responsive iframe {
     width: 100%;
+  }
+  .sec3 .para-sec3 {
+    margin-left: 50px;
+  }
+  .sec2 .citation-block {
+    height: 100px;
+  }
+  .sec2 .citation-block .guille {
+    display: none;
+  }
+  .sec2 .citation-block .citation {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 680px) {
+  h3 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 555px) {
+  .sec1 h1 {
+    padding-top: 0;
+  }
+  .sec1 h2 {
+    padding-bottom: 0;
+  }
+  .sec3 {
+    height: auto;
+  }
+  .sec3 .carre {
+    transform: rotate(0);
+    top: 0;
+    height: 80px;
+    width: 100%;
+  }
+  .sec3 .num {
+    font-size: 50px;
+  }
+  .titre-section3 {
+    display: flex;
+    transform: rotate(0);
+    gap: 20px;
+  }
+  .sec3 .para-sec3 {
+    padding-top: 50px;
+    font-size: 15px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 490px) {
+  h3 {
+    font-size: 24px;
+  }
+  .sec4 .num {
+    display: none;
+  }
+  .sec4 .num2 {
+    position: absolute;
+    display: block;
+    bottom: -50px;
+  }
+  .sec4 .carre {
+    transform: rotate(0);
+  }
+  .sec4 .gauche {
+    display: none;
+  }
+  .sec4 .droit {
+    height: 80px;
+  }
+  .sec4 h3 {
+    background: none;
   }
 }
