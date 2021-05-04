@@ -185,8 +185,6 @@ h3 {
   position: relative;
   background: black;
   justify-content: flex-start;
-  width: 100vw;
-  height: 100vh;
 }
 
 .sec2 .citation-block {
@@ -262,10 +260,14 @@ h3 {
   font-size: 22px;
 }
 
-.sec3 iframe {
+.sec3 .responsive-frame {
+  display: none;
+}
+
+.sec3 .iframe iframe{
   position: absolute;
   bottom: 0;
-  margin-bottom: 220px;
+  margin-bottom: 50px;
   box-shadow: #101010 5px 5px 15px;
 }
 
@@ -328,7 +330,7 @@ h3 {
 .image {
   position: relative;
   width: 70%;
-  margin-bottom: 350px;
+  margin-bottom: 200px;
 }
 
 .image__overlay {
@@ -367,3 +369,65 @@ h3 {
 /* SECTION 5 */
 
 /* SECTION 6 */
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1250px) {
+  .sec2 .citation-block {
+    left: 0;
+    height: 200px;
+    width: 100%;
+    opacity: 0.9;
+    background: #101010;
+  }
+  .sec2 img {
+    width: 100%;
+  }
+  .titre-section3 {
+    line-height: 70px;
+  }
+  .sec3 .carre {
+    width: 320px;
+    height: 320px;
+    top: 65px;
+  }
+  h3{
+    font-size: 48px;
+  }
+  .sec3 .num {
+    font-size: 100px;
+  }
+  iframe {
+    width: 580px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .sec2 .citation-block {
+    height: 150px;
+  }
+  .sec2 .citation-block .citation {
+    font-size: 22px;
+  }
+  .sec3 .para-sec3 {
+    font-size: 20px;
+  }
+  .image {
+    margin-bottom: 80px;
+  }
+  .image__description {
+    width: 70%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 860px) {
+  .sec3 .frame {
+    display: none;
+  }
+  .sec3 .responsive-frame {
+    display: block;
+    width: 100%;
+  }
+}
