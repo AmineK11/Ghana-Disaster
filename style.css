@@ -6,7 +6,11 @@
   list-style: none;
   font-family: 'Heebo', sans-serif;
   font-weight: 400;
-  color: #9D9989;
+  color: #C6C6C6;
+}
+
+body {
+  background: #272622;
 }
 
 img {
@@ -18,8 +22,10 @@ h3 {
   font-size: 64px;
 }
 
-.num {
-  font-size: 144px;
+.num, .num2 {
+  font-size: 190px;
+  font-weight: 900;
+  color: white;
 }
 
 .flex {
@@ -36,7 +42,7 @@ h3 {
   z-index: 99999;
   cursor: pointer;
   position: fixed;
-  top: 20px;
+  top: 13px;
   left: 30px;
 }
 
@@ -131,6 +137,7 @@ h3 {
 .sec1 {
   position: relative;
   text-align: center;
+  background: black;
 }
 
 .sec1 h1 {
@@ -139,7 +146,13 @@ h3 {
   z-index: 11;
   padding-top: 50px;
   font-size: clamp(38px, 5vw, 130px);
+  font-weight: 300;
   color: white;
+}
+
+.sec1 h1 span {
+  color: white;
+  font-weight: 900;
 }
 
 .sec1 h2 {
@@ -156,28 +169,51 @@ h3 {
 
 .sec2 {
   position: relative;
-  text-align: center;
+  background: black;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.sec2 img {
+  max-width: 70%;
 }
 
 .sec2 .citation-block {
   position: absolute;
-  top: 0;
-  margin-top: 35px;
-  margin-left: 50px;
-  width: 38%;
+  bottom: 0;
+  right: 0;
+  height: 400px;
+  width: 700px;
+  background: #101010;
 }
 
-.sec2 .citation {
-  text-align: left;
-  font-size: clamp(14px, 3vw, 48px);
+.sec2 .citation-block .guille {
+  font-size: 254px;
+  position: absolute;
+  left: 30px;
+  top: -100px;
+  color: white;
+}
+
+.sec2 .citation-block .citation {
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 30px;
+  width: 80%;
   color: white;
 }
 
 .sec2 .citation-desc {
-  font-size: clamp(10px, 2vw, 24px);
-  padding-top: 50px;
-  font-style: italic;
+  width: 80%;
   color: white;
+  justify-content: flex-end;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sec2 .citation-desc span {
+  color: white;
+  margin-left: 10px;
 }
 
 /* SECTION 3 */
@@ -186,7 +222,11 @@ h3 {
   position: relative;
 }
 
-.carre {
+.titre-section3 {
+  line-height: 120px;
+}
+
+.sec3 .carre {
   position: absolute;
   top: 0;
   right: 0;
@@ -196,13 +236,94 @@ h3 {
   height: 570px;
 }
 
+.sec3 .para-sec3 {
+  position: absolute;
+  top: 15%;
+  width: 40%;
+  margin-left: 140px;
+  font-size: 22px;
+}
+
 .sec3 iframe {
   position: absolute;
   bottom: 0;
   margin-bottom: 220px;
+  box-shadow: #101010 5px 5px 15px;
 }
 
 /* SECTION 4 */
+.sec4 .carre-box {
+  position: relative;
+  width: 100%;
+}
+
+.sec4 .carre {
+  width: 720px;
+  height: 720px;
+}
+
+.sec4 .droit {
+  background: #221F15;
+}
+
+.sec4 .gauche {
+  background: black;
+}
+
+.sec4 .carre p {
+  position: absolute;
+  bottom: 0;
+}
+
+.sec4 h3 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background: #272622;
+}
+
+.image {
+  position: relative;
+  width: 70%;
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+  filter: brightness(100%);
+  filter: contrast(5%);
+}
+
+.image__overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+  opacity: 1;
+}
+
+.image__overlay:hover > * {
+  transform: translateY(0);
+}
+
+.image__description {
+  width: 30%;
+}
 
 /* SECTION 5 */
 
