@@ -9,6 +9,10 @@
   color: #C6C6C6;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #272622;
 }
@@ -23,7 +27,7 @@ h3 {
 }
 
 .num, .num2 {
-  font-size: 190px;
+  font-size: clamp(50px, 10vw, 190px);
   font-weight: 900;
   color: white;
 }
@@ -136,23 +140,6 @@ h3 {
   transform: scaleX(1);
 }
 
-/* SCROLL HORIZONTAL */
-
-.horizontal {
-  display: flex;
-  flex-direction: row;
-  width: 200vw;
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
-}
-
-.container {
-  width: 100vh;
-  height: 100vw;
-  transform: rotate(-90deg) translateX(-100vh);
-  transform-origin: top left;
-  overflow-x: hidden;
-}
 
 /* SECTION 1 */
 
@@ -206,7 +193,7 @@ h3 {
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 400px;
+  height: 350px;
   width: 700px;
   background: #101010;
 }
@@ -244,6 +231,7 @@ h3 {
 
 .sec3 {
   position: relative;
+  overflow-x: hidden;
 }
 
 .sec3 img {
@@ -252,16 +240,18 @@ h3 {
 
 .titre-section3 {
   line-height: 120px;
+  transform: rotate(-45deg);
 }
 
 .sec3 .carre {
   position: absolute;
-  top: 0;
+  top: 118px;
   right: 0;
   flex-direction: column;
   background-color: #221F15;
   width: 570px;
   height: 570px;
+  transform: rotate(45deg);
 }
 
 .sec3 .para-sec3 {
@@ -280,22 +270,43 @@ h3 {
 }
 
 /* SECTION 4 */
+
+.sec4 {
+  overflow: hidden;
+  gap: 350px;
+}
+
 .sec4 .carre-box {
   position: relative;
   width: 100%;
+  margin-bottom: 350px;
 }
 
 .sec4 .carre {
-  width: 720px;
-  height: 720px;
+  width: 100%;
+  transform: rotate(-45deg);
+}
+
+.sec4 .carre::after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
 }
 
 .sec4 .droit {
   background: #221F15;
+  text-align: center;
+  align-self: center;
 }
 
 .sec4 .gauche {
   background: black;
+}
+
+.sec4 .num {
+  position: absolute;
+  top: 50px;
+  transform: rotate(45deg);
 }
 
 .sec4 .carre p {
@@ -317,6 +328,7 @@ h3 {
 .image {
   position: relative;
   width: 70%;
+  margin-bottom: 350px;
 }
 
 .image__overlay {
