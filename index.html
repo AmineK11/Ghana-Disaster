@@ -9,28 +9,28 @@
     <meta name="description" content="De quelle façon le Ghana est-il devenu une déchetterie mondiale des objets numérique ?">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/a485fb38dc.js" crossorigin="anonymous"></script>
     <title>Ghana Disaster</title>
 </head>
 <body>
 
     <!-- MENU BURGER -->
-
-    <div class="flex">
-        <nav class="flex">
-            <div class="burger">
-                <span class="bar"></span>
-            </div>
-        </nav>
-    </div>
-    <div class="menu_burger navbar flex">
-        <div class="list flex">
-          <a href="#gen" class="list-link">La Genèse</a>
-          <a href="#" class="list-link">Impact sur le Ghana</a>
-          <a href="#" class="list-link">Espoir pour le Ghana</a>
-          <a href="#" class="list-link">Liens utiles</a>
+    
+    <header class="flex">
+        <div class="burger">
+            <span class="bar"></span>
         </div>
-    </div>
 
+        <nav class="list menu_burger navbar flex">
+          <a href="#gen" class="list-link">La Genèse</a>
+          <a href="#imp" class="list-link">Impact sur le Ghana</a>
+          <a href="#esp" class="list-link">Espoir pour le Ghana</a>
+          <a href="#uti" class="list-link">Liens utiles</a>
+        </nav>
+  
+    </header>
     <!-- SECTION GHANA DISASTER -->
 
 <div class="container">
@@ -38,17 +38,23 @@
 
         <div class="sec1 flex">
             <img src="/images/Ghana-bg.jpg" alt="Image d'un enfant portant un télévision">
-            <h1>GHANA <br><span>DISASTER</span></h1>
-            <h2>Le pays devenu décharge mondiale <br> du numérique.</h2>
+            <h1 data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">GHANA <br><span>DISASTER</span></h1>
+            <h2 data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500">Le pays devenu décharge mondiale <br> du numérique.</h2>
         </div>
 
         <!-- CITATION / 2EME IMAGE D'ACCEUIL -->
 
         <div class="sec2 flex">
-            <img src="/images/Enfant-bg.png" alt="Enfant gannéhen dans une décharge">
-            <div class="citation-block">
+            <img src="/images/Enfant-bg.png" alt="Enfant gannéhen dans une décharge" data-aos="fade-right"
+            data-aos-offset="500"
+            data-aos-easing="ease-in-sine">
+            <div class="citation-block" data-aos="flip-up">
                 <span class="guille">“</span>
-                <p class="citation">Je démonte les ordintaeurs et les postes de télévisions pour y trouver les métaux que je vais revendre pour acheter de la nourriture.</p>
+                <p class="citation">Je démonte les ordinateurs et les postes de télévisions pour y trouver les métaux que je vais revendre pour acheter de la nourriture.</p>
                 <p class="flex citation-desc">Pafoche <span>13 ans</span></p>
             </div>
         </div>
@@ -66,9 +72,9 @@
                 <h3>LA GENESE</h3>
             </div>
         </div> 
-        <p class="para-sec3">On estime entre 20 et 50 millions de tonnes de déchets électroniques qui sont produites chaque année dans le monde. 70% des ordinateurs et 80% des téléviseurs sont déposés dans des décharges. Et seulement, 20% des déchets électroniques sont recyclés. Donc, seulement 1/5 de nos déchets électroniques sont réellement recyclé.</p>
+        <p class="para-sec3" data-aos="fade-down-right">On estime entre 20 et 50 millions de tonnes de déchets électroniques qui sont produites chaque année dans le monde. 70% des ordinateurs et 80% des téléviseurs sont déposés dans des décharges. <br><br> Seulement, 20% des déchets électroniques sont recyclés ce qui signifie qu'1/5 de nos déchets électroniques sont réellement recyclés à travers le monde.</p>
         <div class="flex">
-            <iframe class="frame" width="740" height="400" src="https://www.youtube.com/embed/uZI99xZDVkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            <iframe class="frame" width="740" height="400" src="https://www.youtube.com/embed/uZI99xZDVkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-aos="flip-right">
             </iframe>
             <iframe class="responsive-frame" width="740" height="400" src="https://www.youtube.com/embed/uZI99xZDVkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
@@ -81,80 +87,116 @@
     <!-- IMPACT SUR LE GHANA -->
 
     <section class="sec4">
-        <div class="carre-box flex">
+        <div class="carre-box flex" id="imp">
             <div class="flex carre droit"><p class="num">0</p></div>
             <div class="flex carre gauche"><p class="num">2</p></div>
-                <h3>QUEL IMPACT SUR LE GHANA ?</h3>
+                <h3 data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">QUEL IMPACT SUR LE GHANA ?</h3>
                 <br>
                 <p class="num2">02</p>
             </div>
         </div>
 
-        <article class="flex">
+        <article class="flex" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
             <div class="image">
                 <img class="image__img" src="/images/Pafoche.jpg" alt="Pafoche qui travaille dans la décharge">
                 <div class="image__overlay image__overlay--primary">
                     <p class="image__description">
-                    C'est à Agbogbloshie, dans la banlieue de la capitale Accra que la plus grande décharge de déchets électroniques au monde se trouve. Les retombées environnementales sont terribles : pollution, pollutions des eaux, de l’air, contamination de la chaîne alimentaire... Un désastre pour le pays Africain qui lutte pour se sortir de cette situation.</p>
+                    C'est à Agbogbloshie, dans la banlieue de la capitale Accra que la plus grande décharge de déchets électroniques au monde se trouve. Les retombées environnementales sont terribles : pollution des sols, pollution des eaux et de l’air, contamination de la chaîne alimentaire... Un désastre pour le pays Africain qui lutte pour se sortir de cette situation.</p>
                 </div>
             </div>
         </article>
 
-        <article class="flex">
+        <article class="flex" data-aos="flip-right"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
             <div class="image">
                 <img class="image__img" src="/images/décharge.jpg" alt="Photo de la décharge">
                 <div class="image__overlay image__overlay--primary">
-                    <p class="image__description"> Des jeunes hommes, des jeunes femmes, des mères de famille... Pour la plupart, ils vivent du recyclage informatique. Ils brûlent les câbles et les déchets pour récupérer le cuivre notamment, et ce au péril de leur propre vie... Les niveaux de pollution sont parfois 100 fois supérieurs aux seuils autorisés dans la décharge ghanéenne, ce qui a une conséquence très néfaste sur la santé des Ganhéens et Ganhéennes.</p>
+                    <p class="image__description"> Des jeunes hommes, des jeunes femmes, des mères de famille... Pour la plupart, ils vivent du recyclage informatique. Ils brûlent les câbles et les déchets, notamment pour y récupérer les métaux rares, et ce au péril de leur propre vie... Les niveaux de pollution sont parfois 100 fois supérieurs aux seuils autorisés dans la décharge ghanéenne, ce qui a une conséquence très néfaste sur la santé des Ganhéens et Ganhéennes.</p>
                 </div>
             </div>
         </article>
 
-        <div class="stats">
-            <p>170 000 tonnes de déchets générés au Ghana.</p>
-            <p>50 000 Tonnes dans la décharge d’Agbogbloshie.</p>
-            <p>69% des déchets sont déversés à ciel ouvert.</p>
-            <p>24% des déchets sont éliminés.</p>
+        <div class="stats" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
+            <p class="item-1">170 000 tonnes de déchets générées au Ghana par année.</p>
+            <p class="item-2">50 000 tonnes de ces déchets sont déposées dans la décharge d’Agbogbloshie.</p>
+            <p class="item-3">69% des déchets sont déversés à ciel ouvert pour y être traités sur place.</p>
         </div>
 
-        <article class="flex">
+        <article class="flex" data-aos="flip-down"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
             <div class="image">
                 <img class="image__img" src="/images/main-blesse.jpg" alt="Main blessé d'un travailleur">
                 <div class="image__overlay image__overlay--primary">
-                    <p class="image__description"> Une pollution 100 fois supérieure aux seuils autorisés est signalé dans cette décharge, qui serait même l’endroit le plus pollué au monde. Ils inhalent tous un air empoisonné par le plomb, l’arsenic et le mercure. Ce qui ammène un endommagement du système nerveux, un empoisonnement du système sanguin, et surtout, des dommages irréverssibles sur le système respiratoire. Chez les enfants, on trouve un taux de mortalité plus haut que la moyenne. A tout cela, on peut aussi ajouter les accidents de travail très fréquents tels que les coupures, les blessures graves.</p>
+                    <p class="image__description"> Une pollution 100 fois supérieure aux seuils autorisés est signalé dans cette décharge, ce qui ferait d'elle l’endroit le plus pollué au monde. Les habitants aux alentours inhalent tous un air empoisonné par le plomb, l’arsenic et le mercure. Cela provoque un endommagement du système nerveux, un empoisonnement du système sanguin, et surtout, des dommages irréverssibles sur le système respiratoire. Chez les enfants, on observe un taux de mortalité plus haut que la moyenne. <br> A tout cela, on peut aussi ajouter les accidents de travail très fréquents tels que les coupures et les blessures graves.</p>
                 </div>
             </div>
         </article>
 
         <div class="carousel">
-            <img src="/images/carousel-1.png" alt="Traveilleurs qui brûlent des objets">
-            <img src="/images/carousel-2.png" alt="Photo de la décharge avec des travailleurs">
-            <img src="/images/carousel-3.png" alt="Groupe de travailleurs">
-            <img src="/images/carousel-4.jpg" alt="Photo d'ensemble dans la décharge">
+            <div class="slider">
+                <img class="active img-carousel" src="/images/carousel-1.png" alt="Image 1 du Carousel">
+                <img class="img-carousel" src="/images/carousel-2.png" alt="Image 2 du Carousel">
+                <img class="img-carousel" src="/images/carousel-3.png" alt="Image 3 du Carousel">
+                <img class="img-carousel" src="/images/carousel-4.jpg" alt="Image 4 du Carousel">
+                <img class="img-carousel" src="/images/carousel-5.jpg" alt="Image 5 du Carousel">
+            </div>
+
+            <div class="cont-btn">
+              <div class="btn-nav left"><i class="fas fa-arrow-left"></i></div>
+              <div class="btn-nav right"><i class="fas fa-arrow-right"></i></div>
+            </div>
+        </div>
+
+        <div class="carousel-block flex">
+            <div id="carousel">
+                <figure>
+
+                </figure>
+            </div>
         </div>
     </section>
 
     <!-- ESPOIR POUR LE PAYS -->
 
-    <section class="sec5">
-        <h3>UN ESPOIR POUR LE GHANA</h3>
-        <p class="num">03</p>
-        <p>Au Ghana, le marché du recyclage en perpétuelle évolution depuis 20 ans a amené le gouvernement à essayer de trouver des solutions pour faire face à l’ampleur de ce défi économique et environnemental.</p>
-        <p>En 2016, le Ghana s’est doté d’un cadre légal inspiré du modèle de traitement des déchets appliqué en Europe. Des usines de recyclage sont en projet ou en cours de réalisation.</p>
-        <p>Avec ses partenaires, le gouvernement ne peut que s'employer à informer, former et sensibiliser. Un travail de fond auquel doit répondre le gouvernement et apporter des solutions viables pour l’environnement et ceux qui y travaillent.</p>
+    <section class="sec5 flex" id="esp">
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+            <h3>UN ESPOIR POUR LE GHANA</h3>
+            <p class="num">03</p>
+        </div>
+        <div class="para-block" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+            <img class="tourne" src="/images/Logo-recyclage.svg" alt="Logo recyclage">
+            <div class="para-text">
+                <p class="para-sec5 para1">Au Ghana, le marché du recyclage en perpétuelle évolution depuis 20 ans a amené le gouvernement à essayer de trouver des solutions pour faire face à l’ampleur de ce défi économique et environnemental.</p>
+                <p class="para-sec5 para2">En 2016, le Ghana s’est doté d’un cadre légal inspiré du modèle de traitement des déchets appliqué en Europe. Des usines de recyclage sont en projet ou en cours de réalisation.</p>
+                <p class="para-sec5">Avec ses partenaires, le gouvernement ne peut que s'employer à informer, former et sensibiliser. Un travail de fond auquel il doit répondre et apporter des solutions viables pour l’environnement et ceux qui y travaillent.</p>
+            </div>
+        </div>
     </section>
 
     <!-- FOOTER -->
 
-    <footer>
+    <footer id="uti">
         <h5>LIENS UTILES</h5>
         <a href="https://www.francetvinfo.fr/monde/afrique/societe-africaine/la-decharge-de-dechets-electroniques-dagbogbloshie-veritable-defi-economique-et-environnemental-pour-le-ghana_3863287.html">Reportage écrit par France Info: Afrique</a>
         <a href="https://www.youtube.com/watch?v=lpVaz6TV5PE">Reportage vidéo de l'ONU</a>
         <a href="https://www.youtube.com/watch?v=mIlNGjKJK-M">Reportage vidéo de France 24</a>
         <a href="https://www.digitalbusiness.africa/dechets-electroniques-comment-lafrique-est-devenu-le-depotoir-de-leurope-et-quelles-solutions-adopter/">Enquête de Digital Business</a>
         <a href="https://mrmondialisation.org/des-images-a-peine-croyables-la-decharge-dagbogbloshie/">Sources des images utilisées</a>
-        <p>© 2021 - Amine Kahlaoui</p>
+        <p class="copy">© 2021 - Amine Kahlaoui</p>
     </footer>
 
     <script src="app.js"></script>
+    <script>AOS.init();</script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </body>
 </html>
