@@ -567,6 +567,21 @@ footer .copy {
   align-self: center;
 }
 
+.top {
+  position: absolute;
+  right: 0;
+  margin: 100px;
+  width: 100px;
+  height: 100px;
+  background: white;
+  border: 1px solid black;
+}
+
+.top i {
+  font-size: 50px;
+  color: black;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1250px) {
@@ -716,6 +731,11 @@ footer .copy {
     padding: 10px;
     width: 100%;
   }
+  .top {
+    margin: 120px 20px;
+    height: 80px;
+    width: 80px;
+  }
 }
 
 @media (max-width: 490px) {
@@ -747,5 +767,11 @@ footer .copy {
 @media (max-width: 445px) {
   .item-1, .item-2, .item-3 {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 330px) {
+  .top {
+    display: none;
   }
 }
