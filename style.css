@@ -506,6 +506,11 @@ img.active {
   margin-top: 200px;
 }
 
+.sec5 .titre5 {
+  text-align: center;
+  line-height: 130px;
+}
+
 .sec5 .para-text {
   width: 40%;
 }
