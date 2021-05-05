@@ -450,7 +450,7 @@ header .burger {
   display: block;
 	top: 0;
   width: 60%;
-  font-size: 2em;
+  font-size: 30px;
 	animation-duration: 15s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
@@ -535,6 +535,7 @@ footer h5 {
 
 footer {
   height: auto;
+  margin-top: 50px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -606,6 +607,12 @@ footer .copy {
   .sec5 {
     flex-direction: column;
   }
+}
+
+@media (max-width: 990px) {
+  .item-1, .item-2, .item-3 {
+    font-size: 20px;
+}
 }
 
 @media (max-width: 860px) {
@@ -705,4 +712,10 @@ footer .copy {
   .sec4 h3 {
     background: none;
   }
+}
+
+@media (max-width: 445px) {
+  .item-1, .item-2, .item-3 {
+    font-size: 16px;
+}
 }
