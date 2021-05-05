@@ -652,6 +652,19 @@ footer .copy {
 }
 
 @media (max-width: 555px) {
+  .menu_burger.isOpen {
+    z-index: 999;
+    width: 100%;
+    height: 12vh;
+    margin-top: 50px;
+    flex-direction: column;
+    background-color: white;
+    transform: translateY(0);
+  }
+  .list-link {
+    font-size: 15px;
+  }
+
   .sec2 {
     padding-top: 50px;
   }
