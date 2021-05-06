@@ -576,6 +576,12 @@ footer .copy {
   align-self: center;
 }
 
+footer a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(184, 235, 255);
+}
+
 .top {
   position: absolute;
   right: 0;
@@ -584,6 +590,9 @@ footer .copy {
   height: 80px;
   background: white;
   border: 1px solid black;
+}
+.top:hover {
+  transform: scale(1.1);
 }
 
 .top i {
