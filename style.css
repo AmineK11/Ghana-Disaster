@@ -747,7 +747,7 @@ footer .copy {
   }
   .image img {
     max-width: 100%;
-    height: 40vh;
+    height: 30vh;
     object-fit: cover;
 
   }
