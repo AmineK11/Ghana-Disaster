@@ -222,7 +222,7 @@ header .burger {
   position: absolute;
   top: 0;
   z-index: 11;
-  padding-top: 50px;
+  padding-top: 70px;
   font-size: clamp(38px, 6vw, 150px);
   font-weight: 300;
   color: white;
@@ -235,10 +235,10 @@ header .burger {
 
 .sec1 h2 {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   z-index: 11;
-  padding-bottom: 50px;
-  font-size: clamp(12px, 2vw, 26px);
+  padding-bottom: 80px;
+  font-size: clamp(14px, 2vw, 28px);
   color: white;
   font-style: italic;
 }
@@ -398,7 +398,7 @@ header .burger {
 
 .image {
   position: relative;
-  width: 70%;
+  width: 80%;
   margin-bottom: 200px;
 }
 
@@ -525,8 +525,9 @@ img.active {
   justify-content: space-around;
   align-items: center;
 }
+
 .tourne {
-  animation: spin 6s linear infinite;
+  animation: spin 8s linear infinite;
   margin-top: 60px;
   width: 20%;
 }
@@ -571,8 +572,8 @@ footer .copy {
   position: absolute;
   right: 0;
   margin: 100px;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background: white;
   border: 1px solid black;
 }
@@ -682,8 +683,8 @@ footer .copy {
   .menu_burger.isOpen {
     z-index: 999;
     width: 100%;
-    height: 12vh;
-    margin-top: 58px;
+    padding-top: 60px;
+    height: 22vh;
     flex-direction: column;
     background-color: white;
     transform: translateY(0);
@@ -735,6 +736,16 @@ footer .copy {
     margin: 120px 20px;
     height: 80px;
     width: 80px;
+  }
+  .image {
+    width: 100%;
+  }
+  .image img {
+    max-width: 100%;
+  }
+  .carousel {
+    max-width: 100%;
+    padding: 0;
   }
 }
 
