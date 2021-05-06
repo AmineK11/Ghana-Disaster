@@ -243,6 +243,10 @@ header .burger {
   font-style: italic;
 }
 
+.bg-mobile {
+  display: none;
+}
+
 /* SECTION 2 */
 
 .sec2 {
@@ -739,9 +743,13 @@ footer .copy {
   }
   .image {
     width: 100%;
+    height: auto;
   }
   .image img {
     max-width: 100%;
+    height: 40vh;
+    object-fit: cover;
+
   }
   .carousel {
     max-width: 100%;
@@ -778,6 +786,14 @@ footer .copy {
 @media (max-width: 445px) {
   .item-1, .item-2, .item-3 {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  .bg-mobile {display: block;
+  }
+  .bg-pc {
+    display: none;
   }
 }
 
