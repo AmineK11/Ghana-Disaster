@@ -243,7 +243,11 @@ header .burger {
   font-style: italic;
 }
 
-.bg-mobile {
+.bg-mobile1 {
+  display: none;
+}
+
+.bg-mobile2 {
   display: none;
 }
 
@@ -755,6 +759,12 @@ footer .copy {
     max-width: 100%;
     padding: 0;
   }
+  .bg-pc {
+    display: none;
+  }
+  .bg-mobile2 {
+    display: block;
+  }
 }
 
 @media (max-width: 490px) {
@@ -790,9 +800,10 @@ footer .copy {
 }
 
 @media (max-width: 375px) {
-  .bg-mobile {display: block;
+  .bg-mobile1 {
+    display: block;
   }
-  .bg-pc {
+  .bg-mobile2 {
     display: none;
   }
 }
