@@ -8,7 +8,7 @@ function toggleMenu () {
   burger.addEventListener('click', (e) => {    
     navbar.classList.toggle('isOpen');
     burger.classList.toggle('isOpen');
-  }); 
+  })
   liens.forEach((lien) => {
     lien.addEventListener('click', () => {
       navbar.classList.remove('isOpen');
